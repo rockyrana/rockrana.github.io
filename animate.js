@@ -80,7 +80,7 @@ var circleArray = [];
 
 function init(){
     circleArray = [];
-    for(var i = 0; i < 800; i++ ){
+    for(var i = 0; i < 400; i++ ){
         // getting random values for circle aspects
         var radius = Math.random() * 10 + 1;
         var x = Math.random() * (innerWidth -radius) +radius;
