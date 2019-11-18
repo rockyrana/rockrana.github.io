@@ -43,8 +43,6 @@ function Circle(x, y, dx, dy, radius){
         // to draw a circle
         c.beginPath();
         c.arc(this.x,this.y,this.radius,0,Math.PI*2,false);
-        c.strokeStyle='blue';
-        c.stroke();
         c.fillStyle =  this.color;
         c.fill(); 
     }
@@ -80,7 +78,7 @@ var circleArray = [];
 
 function init(){
     circleArray = [];
-    for(var i = 0; i < 400; i++ ){
+    for(var i = 0; i < 100; i++ ){
         // getting random values for circle aspects
         var radius = Math.random() * 10 + 1;
         var x = Math.random() * (innerWidth -radius) +radius;
